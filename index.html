@@ -16,30 +16,36 @@
 <body>
 
   <!-- Header Start from here -->
-  <header class="navbar text-gray-600 body-font shadow-lg">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+  <header class="navbar text-gray-600 body-font shadow-lg z-10">
+    <div class="container mx-auto flex flex-wrapp p-3 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
         <span><a href="index.html" class="logo w-16 lg:w-1/6 md:w-1/4"><img class="md:object-top"
               title="K-Labs Technology Soulution " src="img/Logo.png" alt=""></a></span>
       </a>
-      <nav class="md:ml-auto md:mr-auto mt-4 flex flex-wrap md:flex-shrink-0 items-center text-base justify-center">
-        <a href="#About-us" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> About us
+      <nav class="ml-96 md:mr-auto mt-2 flex flex-wrap md:flex-shrink-0 items-end text-base">
+        <a href="#About-us" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> About us
           </b></a>
-        <a href="#services" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Services
+        <a href="#services" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Services
           </b></a>
-        <a href="#contact-us" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Contact us
+        <a href="#contact-us" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Contact us
           </b></a>
-        <a href="#our-clients" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Our
+        <a href="#our-clients" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Our
             clients </b></a>
-        <a href="#" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Portfolio </b></a>
-        <a href="#" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Our partners </b></a>
-        <a href="#" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Testimonials </b></a>
+        <a href="#portfolio" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Portfolio
+          </b></a>
+        <a href="#our-partners" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Our partners
+          </b></a>
+        <!-- <a href="#" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Testimonials </b></a> -->
       </nav>
-      <a href="#">
+      <a href="#About-us">
         <button
-          class="bg-red-600  hover:bg-red-700  text-white w-2/1 md:1/6 md:text-base font-bold mt-5 mr-28  py-2 px-4 rounded-full">
-          Get in touch
+          class=" btn-Getintouch border rounded-full border-red-600  hover:bg-red-600  text-red-600 hover:text-white w-2/1 md:1/6 md:text-base font-bold mr-28  py-2 px-4">
+          Get In Touch
         </button>
+        <!-- <button
+          class="bg-red-600  hover:bg-red-700  text-white w-2/1 md:1/6 md:text-base font-bold mt-5 mr-28  py-2 px-4 rounded-full">
+          Get In Touch
+        </button> -->
       </a>
     </div>
   </header>
@@ -58,8 +64,9 @@
           <q class="text-2xl text-gray-900">We deliver high quality products based on the latest technologies and
             standards in order to offer our customers added value and help them grow.</q>
           <div class="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
-            <a href="#"
-              class="block w-2/6 px-3 shadow-2xl py-2 text-base font-semibold text-center bg-red-600  hover:bg-red-700 focus:ring-red-700 focus-within:text-white text-white rounded-full">Services
+            <a href="#services"
+              class="block w-2/6 px-3 shadow-2xl py-2 text-base font-semibold text-center bg-red-600  hover:bg-red-700 focus:ring-red-700 focus-within:text-white text-white rounded-full">
+              Services
             </a>
           </div>
         </div>
@@ -116,7 +123,7 @@
           </div>
         </div>
       </div>
-      <form class="flex w-1/2">
+      <form class="flex w-1/2" id="Get-in-touch">
         <div class="md:justify-end py-20 lg:h-128">
           <div class="w-full ml-40 bg-white shadow-2xl rounded-2xl p-10 pb-20">
             <h2 class="text-gray-900 font-semibold justify-center text-center text-2xl">
@@ -159,7 +166,7 @@
 
 
   <!-- Services Section Start -->
-  <div class="py-10 -mt-12 bg-gray-100" id="services">
+  <section class="py-10 -mt-12 bg-gray-100" id="services">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p class="py-16 text-4xl font-semibold  text-gray-900">
@@ -186,94 +193,91 @@
           </h2>
         </div>
       </div>
-      <div class="mt-10 ml-24">
-        <div
-          class=" flex md:space-y-0 md:grid md:grid-cols-3 sm:grid-cols-1 sm:py-0 md:gap-x-8 md:gap-y-10 sm:flex-col">
+      <div class="mt-10 mx-10">
+        <div class=" flex flex-wrap md:space-y-0 md:grid md:grid-cols-3 sm:grid-cols-1 sm:py-0 md:gap-x-8 md:gap-y-10 sm:flex-col">
+          <!-- <div class="py-5">
+            <div class="absolute flex items-center justify-center h-12">
+              <img src="img/icon-consultation.png" class="" alt="Consultation">
+              <p class=" mt-3 text-lg leading-6 font-medium text-gray-900">
+                Consultation
+              </p>
+            </div>
+          </div> -->
           <div class="py-5">
-            <div class="absolute flex items-center justify-center h-12">
-              <img src="img/icons8-consultation-50-removebg-preview.png" class="ml-2 " alt="Consultation">
+            <div class="absolute flex justify-between h-12">
+              <img src="img/icon-development.png" class="" alt="Web Development">
+              <p class="mt-3 text-lg leading-6 font-medium text-gray-900">
+                Web Development
+              </p>
             </div>
-            <p class="ml-16 mt-3 text-lg leading-6 font-medium text-gray-900">
-              Consultation
-            </p>
+          </div>
+          <!-- <div class="py-5">
+            <div class="absolute flex items-center justify-center h-12">
+              <img src="img/icon-web-design.png" class="" alt="Web designing">
+              <p class="mt-3 text-lg leading-6 font-medium text-gray-900">
+                Website Design
+              </p>
+            </div>
+          </div> -->
+
+          <!-- <div class=" flex md:grid md:grid-cols-2 sm:grid-cols-1 sm:py-0 md:gap-x-8 md:gap-y-10 sm:flex-col items-center justify-center"> -->
+          <div class="py-5">
+            <div class="absolute flex justify-between h-12">
+              <img src="img/icon-ios-development.png" class="" alt="Mobile application">
+              <p class="mt-3 text-lg leading-6 font-medium text-gray-900">
+                Mobile Applications
+              </p>
+            </div>
           </div>
           <div class="py-5">
-            <div class="absolute flex items-center justify-center h-12">
-              <img src="img/icons8-development-50-removebg-preview.png" class="" alt="Web Development">
+            <div class="absolute flex justify-between h-12">
+              <img src="img/icon-headset.png" class="" alt="Ongoing Support">
+              <p class="mt-3 text-lg leading-6 font-medium text-gray-900">
+                Ongoing Support
+              </p>
             </div>
-            <p class="ml-16 mt-3 text-lg leading-6 font-medium text-gray-900">
-              Web Development
-            </p>
-          </div>
-          <div class="py-5">
-            <div class="absolute flex items-center justify-center h-12">
-              <img src="img/icons8-web-design-50.png" class="" alt="Web designing">
-            </div>
-            <p class="ml-16 mt-3 text-lg leading-6 font-medium text-gray-900">
-              Website Design
-            </p>
-          </div>
-        </div>
-        <div
-          class=" flex md:grid md:grid-cols-2 sm:grid-cols-1 sm:py-0 md:gap-x-8 md:gap-y-10 sm:flex-col items-center justify-center">
-          <div class="py-10">
-            <div class="absolute flex items-center justify-center h-12 ml-32">
-              <img src="img/icons8-ios-development-50-removebg-preview.png" class="" alt="Mobile application">
-            </div>
-            <p class="ml-44 mt-3 text-lg leading-6 font-medium text-gray-900">
-              Mobile Applications
-            </p>
-          </div>
-          <div class="py-10">
-            <div class="absolute flex items-center justify-center h-12">
-              <img src="img/icons8-headset-50-removebg-preview.png" class="" alt="Ongoing Support">
-            </div>
-            <p class="ml-16 mt-3 text-lg leading-6 font-medium text-gray-900">
-              Ongoing Support
-            </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="mt-10">
-      <h1
-        class="font-semibold lg:text-center lg:text-2xl md:text-base md:text-center sm:text-sm sm:text-center text-gray-900 -ml-16 py-12">
-        Our approach Is based on 4 Stages
-      </h1>
-      <div class="max-w-7xl py-4 font-semibold lg:px-2 mx-auto sm:px-6 bg-gray-50 rounded-2xl shadow-xl">
-        <div class="flex flex-wrap items-center justify-center font-semibold">
-          <div class="flex items-center mr-3">
-            <p class="mr-3">
-              Hear the customer’s needs
-            </p>
-            <img src="img/icons8-right-arrow-48.png" alt="">
-          </div>
-          <div class="flex items-center mr-3">
-            <p class="mr-3">
-              Evaluate and propose the best solution
-            </p>
-            <img src="img/icons8-right-arrow-48.png" alt="">
-          </div>
-          <div class="flex items-center mr-3">
-            <p class="mr-3">
-              Involve the customer while developing the solution
-            </p>
-            <img src="img/icons8-right-arrow-48.png" alt="">
-          </div>
-          <div class="flex items-center mr-3">
-            <p class="mr-3">
-              Deliver
-            </p>
+      <div class="mt-10">
+        <h1
+          class="font-semibold lg:text-center lg:text-2xl md:text-base md:text-center sm:text-sm sm:text-center text-gray-900 -ml-16 py-12">
+          Our approach Is based on 4 Stages
+        </h1>
+        <div class="max-w-7xl py-4 font-semibold lg:px-2 mx-auto sm:px-6 bg-gray-50 rounded-2xl shadow-xl">
+          <div class="flex flex-wrap items-center justify-center font-semibold">
+            <div class="flex items-center mr-3">
+              <p class="mr-3">
+                Hear the customer’s needs
+              </p>
+              <img src="img/icon-right-arrow.png" alt="">
+            </div>
+            <div class="flex items-center mr-3">
+              <p class="mr-3">
+                Evaluate and propose the best solution
+              </p>
+              <img src="img/icon-right-arrow.png" alt="">
+            </div>
+            <div class="flex items-center mr-3">
+              <p class="mr-3">
+                Involve the customer while developing the solution
+              </p>
+              <img src="img/icon-right-arrow.png" alt="">
+            </div>
+            <div class="flex items-center mr-3">
+              <p class="mr-3">
+                Deliver
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+  </section>
   <!-- Services section End -->
 
 
   <!-- Contact Us Section Start -->
-  <div class="py-12" id="contact-us">
+  <section class="py-12" id="contact-us">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="lg:text-center">
         <p class="py-14 text-4xl font-semibold  text-gray-900">
@@ -286,7 +290,7 @@
             Need IT services of excellence?<br>
             Do you have any questions? Requests? Ideas? Or maybe you simply want to chat
             with us to get to know us better? Whatever the reason, everything you need to contact us E-mail us at
-            <b> contact@K-labs.co </b> and we will get back to you regarding your
+            <a href="mailto:contact@k-labs.co"><b>contact@K-labs.co </b></a>and we will get back to you regarding your
             request.
           </h1>
           <div class="text-base pt-5">
@@ -297,7 +301,7 @@
               <b>
                 Email:
               </b>
-              khaled@klabs.co
+              <a href="mailto:khaled@klabs.co">khaled@klabs.co</a>
             </p>
             <p class="uppercase font-semibold pt-2">
               Opening Times: 24/7
@@ -305,16 +309,16 @@
           </div>
         </div>
         <div class="flex flex-wrap w-1/2">
-          <img src="img/At the office-pana.png" alt="">
+          <img src="img/At the office.png" alt="">
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <!-- Contact Us Section End -->
 
 
   <!-- Our Clients start -->
-  <div class="pt-20" id="our-clients">
+  <section class="py-20 bg-gray-100" id="our-clients">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="lg:text-center">
         <p class="py-8 text-4xl font-semibold  text-gray-900">
@@ -322,30 +326,183 @@
         </p>
       </div>
     </div>
-    <div class="flex py-12 px-8 text-xl">
-      <div class="w-1/3 ">
-        <h2>
-          Our clients are from different industries and backgrounds but they all share the need to have a technological
-          solution built to generate revenue streams, establish communication channels or streamline business
-          operations.
-        </h2>
+    <div class="px-10">
+      <div class="flex flex-row py-12 px-16 text-xl">
+        <div class="w-2/5">
+          <h2 class="">
+            Our clients are from different industries and backgrounds but they all share the need to have a
+            technological
+            solution built to generate revenue streams, establish communication channels or streamline business
+            operations.
+          </h2>
+        </div>
+        <Div class="ml-20">
+          <div class="flex border-gray-200 ml-14">
+            <img alt="team" class="w-16 h-16 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="img/Favicon.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">K-labs</h2>
+              <p class="text-gray-500">Technology and solution</p>
+            </div>
+          </div>
+          <div class="flex border-gray-200 ml-14 mt-8">
+            <img alt="team" class="w-16 h-16 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="img/Favicon.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">K-labs</h2>
+              <p class="text-gray-500">Technology and solution</p>
+            </div>
+          </div>
+          <div class="flex border-gray-200 ml-14 mt-8">
+            <img alt="team" class="w-16 h-16 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="img/Favicon.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">K-labs</h2>
+              <p class="text-gray-500">Technology and solution</p>
+            </div>
+          </div>
+        </Div>
+        <Div class="ml-14">
+          <div class="flex border-gray-200 ml-14">
+            <img alt="team" class="w-16 h-16 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="img/Favicon.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">K-labs</h2>
+              <p class="text-gray-500">Technology and solution</p>
+            </div>
+          </div>
+          <div class="flex border-gray-200 ml-14 mt-8">
+            <img alt="team" class="w-16 h-16 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="img/Favicon.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">K-labs</h2>
+              <p class="text-gray-500">Technology and solution</p>
+            </div>
+          </div>
+          <div class="flex border-gray-200 ml-14 mt-8">
+            <img alt="team" class="w-16 h-16 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
+              src="img/Favicon.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">K-labs</h2>
+              <p class="text-gray-500">Technology and solution</p>
+            </div>
+          </div>
+        </Div>
       </div>
     </div>
-    
-  </div>
+  </section>
   <!-- Our Clients End-->
 
 
+  <!-- PortFolio Section Start -->
+  <section class="py-20 bg-white" id="portfolio">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="lg:text-center">
+        <p class="py-8 text-4xl font-semibold  text-gray-900">
+          Portfolio
+        </p>
+      </div>
+    </div>
+    <div class="py-12 text-2xl text-center">
+      Our achievements and delivered projects are our ambassadors to the market.
+    </div>
+    <div class="grid grid-cols-3 gap-3 px-4">
+      <div class="portfolio">
+        <img class="rounded-3xl" src="img/Bahrain Basketball Association.jpg" alt="">
+        <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Bahrain Basketball Association
+        </p>
+        <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="portfolio">
+        <img class="rounded-3xl" src="img/AlJunobya.jpg" alt="">
+        <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Aljunobya</p>
+        <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="portfolio">
+        <img class="rounded-3xl" src="img/Alia Academy.jpg" alt="">
+        <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Alia Academy</p>
+        <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="portfolio">
+        <img class="rounded-3xl" src="img/Bahj.jpg" alt="">
+        <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Bahj </p>
+        <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="portfolio">
+        <img class="rounded-3xl" src="img/Made in gulf.jpg" alt="">
+        <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Made In Gulf</p>
+        <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="portfolio">
+        <img class="rounded-3xl" src="img/AlJunobya.jpg" alt="">
+        <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">AlJunobya</p>
+        <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+  </section>
+  <!-- PortFolio Section End -->
+
+
+  <!-- Our Partners Section start -->
+  <section class="py-12 bg-white" id="our-partners">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="lg:text-center">
+        <h1 class="py-10 text-4xl font-semibold  text-gray-900">
+          Our Partners
+        </h1>
+      </div>
+    </div>
+    <div class="grid grid-cols-2">
+      <div class="text-xl text-gray-900 font-semibold mx-auto">
+        <h1 class="">
+          Raed
+        </h1>
+      </div>
+      <div class="text-xl text-gray-900 font-semibold mx-auto">
+        <h1 class="">
+          Telp
+        </h1>
+      </div>
+    </div>
+  </section>
+  <!-- Our Partners Section End -->
+
+
+  <!-- Careers Section Start -->
+  <section class="pb-6 bg-gray-100" id="Careers">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="lg:text-center">
+        <h1 class="py-10 text-4xl font-semibold  text-gray-900">
+          Careers
+        </h1>
+      </div>
+    </div>
+    <div class="mx-auto text-gray-900 text-lg font-semibold text-center">
+      <h1> As a growing company, we are constantly looking for talented people to join the team.
+        If you are interested in working with us, please contact us at <a class="text-red-600" href="mailto:careers@klabs.co" class="">
+          careers@klabs.co</a>
+      </h1>
+      <!-- <h1>
+        OR
+      </h1>
+      <h1>
+        Click on the Job post below to apply. 
+      </h1> -->
+    </div>
+    <div id="rooster"></div>
+  </section>
+
+  <!-- Careers Section End -->
   <!-- Footer Start  -->
-  <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+  <hr class="h-px bg-gray-300 border-none dark:bg-gray-700">
   <footer class="bg-white">
     <div class="container px-6 py-4 mx-auto">
       <div class="lg:flex">
         <div class="w-full -mx-6 lg:w-2/5">
           <div class="px-6">
             <div>
-              <a href="index.html" class="text-xl font-bold text-gray-900 "><img src="img/Logo.png" title="K-Labs Technology Soulution" class="logo -ml-5"
-                  alt="">
+              <a href="index.html" class="text-xl font-bold text-gray-900 "><img src="img/Logo.png"
+                  title="K-Labs Technology Soulution" class="logo -ml-5" alt="">
                 <p class="max-w-md mt-2 text-gray-900 cursor-pointer">
                   Technology and solution
                 </p>
@@ -410,7 +567,11 @@
   </footer>
   <!-- Footer End  -->
 
-
+  <script src="https://roostercdn.s3-ap-southeast-1.amazonaws.com/rooster.min.js"></script>
+  <script>
+    const rooster = new Rooster('#rooster', 9998);
+    rooster.setup();
+  </script>
 </body>
 
 </html>
