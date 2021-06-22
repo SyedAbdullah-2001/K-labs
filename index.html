@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet/tailwind.css">
   <link rel="stylesheet" href="stylesheet/style.css">
   <link rel="shortcut icon" href="img/Favicon.png" type="img/x-icon">
@@ -54,7 +55,7 @@
   <!-- Hero Section start -->
   <section class="hero-section mt-48 lg:mt-auto" id="home">
     <div class="lg:flex">
-      <div class="flex items-center justify-center w-full mt-72 px-6 py-8 lg:h-128 lg:w-1/2 ml-3.5">
+      <div class="flex items-center justify-center w-full mt-72 px-8 py-8 lg:h-128 lg:w-1/2">
         <div class="max-w-xl">
           <p class="text-xl text-gray-700 lg:text-xl">Embrace digitalisation for new range of business opportunities.
           </p>
@@ -72,14 +73,97 @@
         </div>
       </div>
       <div>
-        <img src="img/hero-sec.png" class="mt-40" style="width:600px; height:615px;" alt="">
+        <img src="img/hero-sec.png" class="lg:mt-40 sm:mt-0" style="width:600px; height:615px;" alt="">
       </div>
     </div>
   </section>
   <!-- Hero section End -->
 
   <!-- About us section Start -->
-  <section class="lg:mt-auto py-12" id="About-us">
+  <section class="lg:mt-auto py-20 bg-red-600" id="About-us">
+    <div class="lg:flex text-center uppercase py-7 justify-center text-4xl font-semibold bg-red-600 text-white pb-5">
+      <h1> About us </h1>
+    </div>
+    <div class="about-us grid lg:grid-cols-2 sm:grid-cols-1">
+      <div class="justify-center">
+        <div class="items-center px-14 justify-center w-full text-xl text-white font-extralight">
+          <h3 class="flex">
+            Technology is at the center of business activities and factors related to technology reflect the reliability
+            and professionalism of a business. At K-Lab we recognize this importance so that we offer you the best and
+            suitable technological solutions based on your needs and requirements.
+          </h3>
+          <h3 class="mt-5 flex">
+            More than 10 expertise in the IT industry and a customer-centric approach are our salient strengths allowing
+            us to better serve your business and help you grow.
+          </h3>
+          <h3 class="mt-5 flex">
+            It is our goal to provide reliable, flexible, and secure web and app solutions that support business
+            activities and serve global customers, providing by that a key growth driver.
+          </h3>
+        </div>
+          <div class="grid lg:grid-cols-3 sm:grid-cols-1 pl-5gap-14 mb-10 md:grid-cols2 md:pl-3 md-pt-16 pl-10 pt-8 text-base">
+            <div
+              class="card text-white text-center hover:shadow-2xl shadow-xl font-semibold cursor-default hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
+              <div class="m-8 text-center justify-center">
+                <span class="font-semibold text-xl ">Team members </span><span
+                  class="flex justify-center text-5xl">
+                  10+ </span>
+              </div>
+            </div>
+            <div
+              class="card text-white text-center text-lg hover:shadow-2xl shadow-xl font-semibold cursor-default hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
+              <div class="m-5">
+                <span>Founded in Bahrain in 2015 and expanded worldwide in 2018</span>
+              </div>
+            </div>
+            <div
+              class="card text-white text-center text-lg hover:shadow-2xl shadow-xl font-semibold cursor-default hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
+              <div class="m-6">
+                <span>We offer services to government entities and organizations</span>
+              </div>
+            </div>
+        </div>
+      </div>
+      <form class="md:grid-cols-1 sm:grid-cols-1 md:flex-row lg:ml-0 md:ml-28 sm:ml-24" id="Get-in-touch">
+        <div class="md:justify-end">
+          <div class="w-3/4 bg-white shadow-2xl rounded-2xl p-10">
+            <h2 class="text-gray-900 font-semibold justify-center text-center text-2xl">
+              GET IN TOUCH!
+            </h2>
+            <div class="w-full">
+              <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
+                  class="text-red-600 mr-1">*</span> Full Name</div>
+              <div class="my-2 bg-white p-1 flex border border-gray-200 rounded-2xl"> <input placeholder="Full Name"
+                  class="p-1 px-2 appearance-none outline-none w-full text-gray-800"> </div>
+            </div>
+            <div class="w-full">
+              <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
+                  class="text-red-400 mr-1">*</span> Email </div>
+              <div class="my-2 bg-white p-1 flex border border-gray-200 rounded-2xl"> <input placeholder="Email"
+                  class="p-1 px-2 appearance-none outline-none w-full text-gray-800"> </div>
+            </div>
+            <div class="w-full">
+              <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
+                  class="text-red-400 mr-1">*</span> Mobile Number</div>
+              <div class="my-2 bg-white p-1 flex border border-gray-200 rounded-2xl"> <input placeholder="Mobile Number"
+                  class="p-1 px-2 appearance-none outline-none w-full text-white-800"> </div>
+            </div>
+            <div class="w-full">
+              <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
+                  class="text-red-400 mr-1">*</span>Message</div>
+              <div class="my-2 bg-white p-1 flex border border-gray-200 rounded-2xl"> <input placeholder="Message"
+                  class="p-1 px-2 appearance-none outline-none w-full text-white-800"> </div>
+            </div>
+            <div class="mt-6">
+              <div class="text-center font-medium py-2 px-4 shadow-xl rounded-3xl bg-red-600 hover:bg-red-700 text-white
+                     cursor-pointer text-xl">Submit</div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- <section class="lg:mt-auto py-12" id="About-us">
     <div class="lg:flex text-center uppercase py-14 justify-center text-4xl font-semibold bg-red-600 text-white pb-5">
       <h1> About us </h1>
     </div>
@@ -161,7 +245,7 @@
         </div>
       </form>
     </div>
-  </section>
+  </section> -->
   <!-- About us section End  -->
 
 
@@ -194,7 +278,8 @@
         </div>
       </div>
       <div class="mt-10 mx-10">
-        <div class=" flex flex-wrap md:space-y-0 md:grid md:grid-cols-3 sm:grid-cols-1 sm:py-0 md:gap-x-8 md:gap-y-10 sm:flex-col">
+        <div
+          class=" flex flex-wrap md:space-y-0 md:grid md:grid-cols-3 sm:grid-cols-1 sm:py-0 md:gap-x-8 md:gap-y-10 sm:flex-col">
           <!-- <div class="py-5">
             <div class="absolute flex items-center justify-center h-12">
               <img src="img/icon-consultation.png" class="" alt="Consultation">
@@ -318,7 +403,7 @@
 
 
   <!-- Our Clients start -->
-  <section class="py-20 bg-gray-100" id="our-clients">
+  <!-- <section class="py-20 bg-gray-100" id="our-clients">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div class="lg:text-center">
         <p class="py-8 text-4xl font-semibold  text-gray-900">
@@ -390,7 +475,7 @@
         </Div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Our Clients End-->
 
 
@@ -479,7 +564,8 @@
     </div>
     <div class="mx-auto text-gray-900 text-lg font-semibold text-center">
       <h1> As a growing company, we are constantly looking for talented people to join the team.
-        If you are interested in working with us, please contact us at <a class="text-red-600" href="mailto:careers@klabs.co" class="">
+        If you are interested in working with us, please contact us at <a class="text-red-600"
+          href="mailto:careers@klabs.co" class="">
           careers@klabs.co</a>
       </h1>
       <!-- <h1>
@@ -567,6 +653,10 @@
   </footer>
   <!-- Footer End  -->
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://roostercdn.s3-ap-southeast-1.amazonaws.com/rooster.min.js"></script>
   <script>
     const rooster = new Rooster('#rooster', 9998);
