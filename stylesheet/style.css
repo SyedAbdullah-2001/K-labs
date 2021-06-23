@@ -7,9 +7,9 @@
 } */
 }
 @media (min-width: 650px){
-.logo {
-    width: 200px !important;   
-}
+        .logo {
+        width: 200px !important;   
+        }
 }
 @media (max-width: 639px){
         form{
@@ -17,16 +17,39 @@
         }
 }
 @media (max-width: 639px){
-        .card{
-                margin-left: 70px !important;
-                /* padding-bottom: 10px; */
+        .ca-rd{
+                display: flex;
+                
+        }
+        .home-page .service{
+                display: flex;
+                justify-content: center;
+        }
+        .home-page img{
+                display: none;
         }
 }
-/* @media (max-width: 1434px){
-        .card {
-            display: none !important;   
+@media (max-width: 639px){
+        .ca-rd{
+                display: flex;
+                
         }
-} */
+}
+@media only screen and (max-width: 1023px){
+        .service-btn{
+                display: flex;
+                justify-content: center;
+        }
+        .home-page .home-content{
+                display: flex !important;
+                justify-content: center !important;
+                text-align: center !important;
+        }
+        form{
+                display: none;
+        }
+}
+
 html{
         scroll-behavior: smooth;
 }
@@ -45,6 +68,12 @@ html{
   }
 /* .menu:hover {
     text-decoration: underline;
+} */
+.service-btn{
+        outline: none;
+}
+/* .About-us{
+        background-color: red;
 } */
 .card{
         width: 180px;
