@@ -2,9 +2,6 @@
 .logo {
     width: 150px !important;
 }
-/* .nav-items{
-    display:none
-} */
 }
 @media (min-width: 650px){
         .logo {
@@ -29,9 +26,10 @@
                 display: none;
         }
 }
-@media (max-width: 639px){
-        .ca-rd{
-                display: flex;
+@media only screen and (max-width: 639px){
+        .card{
+                display: flex !important;
+                justify-content: center !important;
                 
         }
 }
@@ -45,9 +43,9 @@
                 justify-content: center !important;
                 text-align: center !important;
         }
-        form{
-                display: none;
-        }
+        /* form{
+                
+        } */
 }
 
 html{
@@ -72,22 +70,30 @@ html{
 .service-btn{
         outline: none;
 }
-/* .About-us{
-        background-color: red;
-} */
+.home-picture{
+        width:600px;
+        height:615px;
+}
+.About-us h1{
+        font-family: 'Baloo Tammudu 2', cursive;
+}
 .card{
         width: 180px;
         height: 180px;
         border-radius: 50%;
         justify-content: space-evenly;
 }
+.btn-Getintouch{
+        outline: none !important;
+}
+.services h1{
+        font-family: 'Baloo Tammudu 2', cursive;;
+}
 .logo-footer{
   width: 150px !important;
   margin-left: -20px;
 }
-.btn-Getintouch{
-        outline: none !important;
-}
+
 #rooster{
         padding-left: 86px;
 }
