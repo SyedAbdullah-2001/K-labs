@@ -89,6 +89,18 @@ html{
 .services h1{
         font-family: 'Baloo Tammudu 2', cursive;;
 }
+.contact-us h1{
+        font-family: 'Baloo Tammudu 2', cursive;
+}
+.our-clients h1{
+        font-family: 'Baloo Tammudu 2', cursive;
+}
+.portfolio h1{
+        font-family: 'Baloo Tammudu 2', cursive;
+}
+.our-partners h1{
+        font-family: 'Baloo Tammudu 2', cursive;
+}
 .logo-footer{
   width: 150px !important;
   margin-left: -20px;
