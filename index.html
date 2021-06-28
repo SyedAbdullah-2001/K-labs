@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet/tailwind.css">
   <link rel="stylesheet" href="stylesheet/style.css">
   <link rel="shortcut icon" href="img/Favicon.png" type="img/x-icon">
@@ -57,7 +56,7 @@
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <button type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <!--
@@ -111,7 +110,7 @@
                 class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
                 <b> Our Clients </b> </a>
 
-              <a href="#our-partners"
+              <a href="#portfolio"
                 class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
                 <b> Portfolio </b> </a>
 
@@ -130,7 +129,7 @@
 
   <!-- Mobile menu, show/hide based on menu state. -->
   <div class="sm:hidden" id="mobile-menu">
-    <div class="px-2 pt-2 pb-3 space-y-1">
+    <div class="px-2 pt-4 pb-3 space-y-1">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 
       <a href="#About-us"
@@ -142,10 +141,13 @@
       <a href="#contact-us"
         class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Contact us</a>
 
-      <a href="#our-clinets"
+      <a href="#our-clients"
         class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Our Clients</a>
 
-      <a href="#Our partners"
+      <a href="#portfolio"
+        class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">PortFolio</a>
+
+      <a href="#our-partners"
         class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Our Partners</a>
     </div>
   </div>
@@ -425,7 +427,7 @@
   <!-- Our Clients start -->
   <div class="w-full bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 bg-gray-100">
-      <div class="our-clients py-20" id="our-clients">
+      <div class="our-client py-20" id="our-clients">
         <h1 class="py-8 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900">
           Our Clients
         </h1>
@@ -509,7 +511,7 @@
     <div class="lg:py-12 text-2xl text-center">
       Our achievements and delivered projects are our ambassadors to the market.
     </div>
-    <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3 px-4">
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3 px-4 py-12">
       <div class="portfolio">
         <img class="rounded-3xl" src="img/Bahrain Basketball Association.jpg" alt="">
         <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Bahrain Basketball Association
@@ -571,20 +573,19 @@
   <!-- Careers Section Start -->
   <div class="w-full bg-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 bg-gray-100">
-      <div class="pb-6 " id="Careers">
-
+      <div class="Career pb-6 " id="Careers">
         <div class="lg:text-center">
-          <h1 class="py-10 text-4xl font-semibold  text-gray-900">
+          <h1 class="py-10 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold text-gray-900">
             Careers
           </h1>
         </div>
       </div>
-      <div class="mx-auto text-gray-900 text-lg font-semibold text-center">
-        <h1> As a growing company, we are constantly looking for talented people to join the team.
+      <div class="mx-auto text-gray-900 text-2xl font-semibold text-center">
+        <h2> As a growing company, we are constantly looking for talented people to join the team.
           If you are interested in working with us, please contact us at <a class="text-red-600"
             href="mailto:careers@klabs.co" class="">
             careers@klabs.co</a>
-        </h1>
+        </h2>
         <!-- <h1>
         OR
       </h1>
@@ -687,11 +688,14 @@
   </div>
   <!-- Footer End  -->
 
+
+  <!-- script tags Start-->
   <script src="https://roostercdn.s3-ap-southeast-1.amazonaws.com/rooster.min.js"></script>
   <script>
     const rooster = new Rooster('#rooster', 9998);
     rooster.setup();
   </script>
+  <!-- script tags  End-->
 </body>
 
 </html>
