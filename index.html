@@ -51,7 +51,7 @@
     </div>
   </header> -->
   <!-- Header End  -->
-  <nav class="bg-white">
+  <nav class="navbar bg-white shadow-lg z-10">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -99,20 +99,24 @@
                   About us </b> </a>
 
               <a href="#services"
-                class="text-gray-900 hover:text-red-600 lg:px-3 md:px-0 sm:px-0 py-2 rounded-md lg:text-xl md:text-lg sm:text-base font-medium">
+                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md lg:text-xl md:text-lg sm:text-base font-medium">
                 <b>
                   Services </b> </a>
 
               <a href="#contact-us"
-                class="text-gray-900 hover:text-red-600 lg:px-3 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
+                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
                 <b> Contact us </b> </a>
 
               <a href="#our-clients"
-                class="text-gray-900 hover:text-red-600 lg:px-3 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
+                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
                 <b> Our Clients </b> </a>
 
               <a href="#our-partners"
-                class="text-gray-900 hover:text-red-600 lg:px-3 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
+                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
+                <b> Portfolio </b> </a>
+
+              <a href="#our-partners"
+                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
                 <b> Our Partners </b> </a>
             </div>
           </div>
@@ -391,7 +395,7 @@
               <a href="mailto:contact@k-labs.co"><b>contact@K-labs.co </b></a>and we will get back to you regarding your
               request.
             </h2>
-            <div class="grid grid-cols-3 text-lg pt-5">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 text-lg pt-5">
               <p>
                 <b>Phone:</b><em>(973) 36995799</em>
               </p>
@@ -403,10 +407,8 @@
                   <a href="mailto:khaled@klabs.co">khaled@klabs.co</a>
                 </em>
               </p>
-              <p class="uppercase font-semibold pt-2">
-                <em>
-                  Opening Times: 24/7
-                </em>
+              <p class="uppercase font-semibold">
+                  Opening Times: <em> 24/7</em>
               </p>
             </div>
           </div>
@@ -498,7 +500,7 @@
   <!-- PortFolio Section Start -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="py-20 bg-white" id="portfolio">
-      <div class="portfolio lg:text-center">
+      <div class="portfolio-page lg:text-center">
         <h1 class="py-8 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900">
           Portfolio
           <h1>
@@ -615,15 +617,15 @@
             </p>
             <div class="flex mt-4 -mx-2">
               <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
-                aria-label="github">
-                <img src="https://img.icons8.com/material/24/000000/github.png" />
+                aria-label="github" title="Github">
+                <img src="https://img.icons8.com/material/24/000000/github.png"/>
               </a>
               <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
-                aria-label="Twitter">
+                aria-label="Twitter" title="Twitter">
                 <img src="https://img.icons8.com/material/24/000000/twitter-squared.png" />
               </a>
               <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 "
-                aria-label="Facebook">
+                aria-label="Facebook" title="Facebook">
                 <img src="https://img.icons8.com/material/24/000000/facebook-new.png" />
               </a>
             </div>
@@ -633,18 +635,34 @@
           <div class="grid grid-cols-3 gap-4 sm:grid-cols-2 md:grid-cols-3">
             <div>
               <!-- <h3 class="uppercase text-red-700 cursor-default">Who are we? </h3> -->
-              <a href="#Aboutus" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">
-                About us
+              <a href="#About-us"
+                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline"> About us
               </a>
-              <a href="#" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Services</a>
-              <a href="#" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Our
-                Clients</a>
+
+              <a href="#services"
+                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Services
+              </a>
+
+              <a href="#contact-us"
+                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">contact us
+              </a>
+
             </div>
 
             <div>
-              <a href="#" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Portfolio</a>
-              <!-- <a href="#" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Testimonials</a> -->
-              <a href="#" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Careers</a>
+              <a href="#our-clients"
+                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Our Clients
+              </a>
+
+              <a href="#portfolio"
+                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Portfolio
+              </a>
+
+              <!-- <a href="#"
+                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Testimonials
+              </a> -->
+
+              <a href="#careers" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Careers</a>
             </div>
 
             <div>
