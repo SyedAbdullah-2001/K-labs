@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="stylesheet/tailwind.css">
   <link rel="stylesheet" href="stylesheet/style.css">
   <link rel="shortcut icon" href="img/Favicon.png" type="img/x-icon">
@@ -16,149 +17,88 @@
 <body>
 
   <!-- Header Start from here -->
-  <!-- <header class="navbar text-gray-600 body-font shadow-lg z-10">
-    <div class="container mx-auto flex flex-wrapp p-3 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-        <span><a href="index.html" class="logo lg:w-3/12 md:w-1/4 sm:w-1/5"><img class="md:object-top"
-              title="K-Labs Technology Soulution " src="img/Logo.png" alt=""></a></span>
-      </a>
-      <nav class="lg:ml-96 md:ml-0 sm:ml-0 md:mr-auto mt-2 flex flex-wrap md:flex-shrink-0 items-end text-base">
-        <a href="#About-us" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> About us
-          </b></a>
-        <a href="#services" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Services
-          </b></a>
-        <a href="#contact-us" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Contact us
-          </b></a>
-        <a href="#our-clients" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Our
-            clients </b></a>
-        <a href="#portfolio" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Portfolio
-          </b></a>
-        <a href="#our-partners" class="menu text-lg lg:text-xl text-gray-900 mr-5 hover:text-red-600"><b> Our partners
-          </b></a> -->
-  <!-- <a href="#" class="menu text-lg lg:text-xl text-gray-900 mr-5 mt-5 hover:text-red-600"><b> Testimonials </b></a> -->
-  <!-- </nav>
-      <a href="#About-us">
-        <button
-          class=" btn-Getintouch border rounded-full border-red-600  hover:bg-red-600  text-red-600 hover:text-white w-2/1 lg:inline md:hidden sm:hidden md:text-base font-bold mr-28  py-2 px-4">
-          Get In Touch
-        </button> -->
-  <!-- <button
-          class="bg-red-600  hover:bg-red-700  text-white w-2/1 md:1/6 md:text-base font-bold mt-5 mr-28  py-2 px-4 rounded-full">
-          Get In Touch
-        </button> -->
-  <!-- </a>
-    </div>
-  </header> -->
-  <!-- Header End  -->
-  <nav class="navbar bg-white shadow-lg z-10">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-16">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            aria-controls="mobile-menu" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <!--
-              Icon when menu is closed.
-  
-              Heroicon name: outline/menu
-  
-              Menu open: "hidden", Menu closed: "block"
-            -->
-            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <!--
-              Icon when menu is open.
-  
-              Heroicon name: outline/x
-  
-              Menu open: "block", Menu closed: "hidden"
-            -->
-            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="img/Logo.png" alt="K-labs Technology and Solution">
-            <img class="hidden lg:block h-10 w-auto -mt-3 xl:pr-80 lg:pr-0 md:pr-0 sm:pr-0" src="img/Logo.png"
-              alt="Workflow">
+  <nav class="bg-white dark:bg-gray-800 navbar shadow-lg z-10">
+    <div x-data="{isOpen : false}" class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+
+      <div class="container px-6 mx-auto md:flex md:justify-between md:items-center">
+        <div class="flex items-center justify-between">
+          <div>
+            <a href="index.html">
+              <img class="block h-12 w-auto" title="K-Labs Technology Solutions" src="img/Logo.png"
+                alt="K-labs Technology and Solution"></a>
           </div>
-          <div class="hidden sm:block sm:ml-6">
-            <div class="flex space-x-4 text-right">
+          <div class="main-menu flex md:block sm:hidden">
+            <div class="flex flex-wrap ml-64">
 
-              <a href="#About-us"
-                class="text-gray-900 hover:text-red-600 lg:px-3 md:px-0 sm:px-0 py-2 rounded-md lg:text-xl md:text:base  font-medium">
-                <b>
-                  About us </b> </a>
+              <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2" href="#About-us">
+                About us</a>
 
-              <a href="#services"
-                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md lg:text-xl md:text-lg sm:text-base font-medium">
-                <b>
-                  Services </b> </a>
+              <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2" href="#services">
+                Services </a>
 
-              <a href="#contact-us"
-                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
-                <b> Contact us </b> </a>
+              <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+                href="#contact-us">Contact us </a>
 
-              <a href="#our-clients"
-                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
-                <b> Our Clients </b> </a>
+              <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2" href="#our-clients">
+                Our clients </a>
 
-              <a href="#portfolio"
-                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
-                <b> Portfolio </b> </a>
+              <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+                href="#portfolio">Portfolio </a>
 
-              <a href="#our-partners"
-                class="text-gray-900 hover:text-red-600 lg:px-1 md:px-0 sm:px-0 py-2 rounded-md text-xl font-medium">
-                <b> Our Partners </b> </a>
+              <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2" href="#our-partners">
+                Our partners </a>
             </div>
           </div>
-          <!-- <button class="border btn-Getintouch border-red-600 hover:bg-red-600 text-gray-900 hover:text-white lg:inline md:hidden sm:hidden font-bold py-2 px-4 rounded-full">
-            Get in touch
-          </button> -->
+
+          <!-- Mobile menu button -->
+          <div class="flex md:hidden">
+            <button type="button"
+              class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+              aria-label="toggle menu" @click="isOpen = !isOpen">
+              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                <path fill-rule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+        <div x-show="isOpen" class="items-center md:flex">
+          <div class="flex flex-col md:flex-row md:mx-6">
+            <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+            href="#About-us"> About us</a>
+
+            <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+            href="#services"> Services </a>
+
+            <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+              href="#contact-us">Contact us </a>
+
+            <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+            href="#our-clients">Our clients </a>
+
+            <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+              href="#portfolio">Portfolio </a>
+
+            <a class="my-1 text-xl font-medium text-gray-900 hover:text-red-600 block px-3 py-2"
+            href="#our-partners"> Our partners </a>
+          </div>
         </div>
       </div>
     </div>
   </nav>
+  <!-- Header End -->
 
-  <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden" id="mobile-menu">
-    <div class="px-2 pt-4 pb-3 space-y-1">
-      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-
-      <a href="#About-us"
-        class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">About us</a>
-
-      <a href="#services"
-        class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
-
-      <a href="#contact-us"
-        class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Contact us</a>
-
-      <a href="#our-clients"
-        class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Our Clients</a>
-
-      <a href="#portfolio"
-        class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">PortFolio</a>
-
-      <a href="#our-partners"
-        class="text-gray-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium">Our Partners</a>
-    </div>
-  </div>
-  </nav>
   <!-- Home Section start -->
   <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
     <div class="home-page mt-48 md:mt-0 sm:mt-0 lg:mt-auto" id="home">
       <div class="lg:flex">
-        <div class="home-content flex w-full lg:mt-72 md:mt-0 sm:mt-0 py-8 lg:h-128 lg:w-1/2">
+        <div class="home-content flex w-full lg:mt-72 md:mt-10 sm:mt-10 py-8 lg:h-128 lg:w-1/2">
           <div class="max-w-xl">
-            <p class="text-xl text-gray-700 lg:text-xl">Embrace digitalisation for new range of business opportunities.
+            <p class="text-xl text-gray-700 lg:text-xl">Embrace digitalisation for new range of business
+              opportunities.
             </p>
             <p class="text-xl text-gray-700 lg:text-xl">Embracing digitalisation to tap into new markets.</p>
             <h2 class="text-2xl font-semibold text-gray-900 lg:text-xl mt-3 mb-5">
@@ -242,7 +182,8 @@
                   <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
                       class="text-red-600 mr-1">*</span> Full Name</div>
                   <div class="my-2 bg-white p-1 flex border border-gray-200 rounded-2xl"> <input placeholder="Full Name"
-                      class="p-1 px-2 appearance-none outline-none w-full text-gray-800"> </div>
+                      class="p-1 px-2 appearance-none outline-none w-full text-gray-800">
+                  </div>
                 </div>
                 <div class="w-full">
                   <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
@@ -393,25 +334,25 @@
             <h2 class="text-2xl">
               Need IT services of excellence?<br>
               Do you have any questions? Requests? Ideas? Or maybe you simply want to chat
-              with us to get to know us better? Whatever the reason, everything you need to contact us E-mail us at <br>
-              <a href="mailto:contact@k-labs.co"><b>contact@K-labs.co </b></a>and we will get back to you regarding your
+              with us to get to know us better? Whatever the reason, everything you need to contact us E-mail us at
+              <br>
+              <a href="mailto:contact@k-labs.co"><b>contact@K-labs.co </b></a>and we will get back to you regarding
+              your
               request.
             </h2>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 text-lg pt-5">
-              <p>
-                <b>Phone:</b><em>(973) 36995799</em>
-              </p>
-              <p>
-                <b>
-                  Email:
-                </b>
-                <em>
-                  <a href="mailto:khaled@klabs.co">khaled@klabs.co</a>
-                </em>
-              </p>
-              <p class="uppercase font-semibold">
-                  Opening Times: <em> 24/7</em>
-              </p>
+              <div class="py-4 whitespace-no-wrap text-sm leading-5 text-black-500">
+                <i class="fa fa-phone text-2xl text-white" aria-hidden="true"></i>
+                <span class="text-xl">(973) 36995799</span>
+              </div>
+              <div class="py-4 whitespace-no-wrap text-sm leading-5 text-black-500">
+                <i class="fa fa-envelope text-2xl text-white" aria-hidden="true"></i>
+                <span class="text-xl"><a href="mailto:khaled@klabs.co">khaled@klabs.co</a></span>
+              </div>
+              <div class="py-4 whitespace-no-wrap text-sm leading-5 text-black-500">
+                <i class="fa fa-clock-o text-2xl text-white" aria-hidden="true"></i>
+                <span class="text-2xl"> opening Times: 24/7 </span>
+              </div>
             </div>
           </div>
           <!-- <div class="flex flex-wrap w-1/2 md:w-2/6 sm:w-1/4">
@@ -551,7 +492,7 @@
 
   <!-- Our Partners Section start -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-10">
-    <div class="py-12 bg-white" id="our-partners">
+    <div class="py-20 bg-white" id="our-partners">
       <div class="our-partners lg:text-center">
         <h1 class="py-10 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900">
           Our Partners
@@ -619,7 +560,7 @@
             <div class="flex mt-4 -mx-2">
               <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                 aria-label="github" title="Github">
-                <img src="https://img.icons8.com/material/24/000000/github.png"/>
+                <img src="https://img.icons8.com/material/24/000000/github.png" />
               </a>
               <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                 aria-label="Twitter" title="Twitter">
@@ -636,27 +577,25 @@
           <div class="grid grid-cols-3 gap-4 sm:grid-cols-2 md:grid-cols-3">
             <div>
               <!-- <h3 class="uppercase text-red-700 cursor-default">Who are we? </h3> -->
-              <a href="#About-us"
-                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline"> About us
+              <a href="#About-us" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline"> About
+                us
               </a>
 
-              <a href="#services"
-                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Services
+              <a href="#services" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Services
               </a>
 
-              <a href="#contact-us"
-                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">contact us
+              <a href="#contact-us" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">contact
+                us
               </a>
 
             </div>
 
             <div>
-              <a href="#our-clients"
-                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Our Clients
+              <a href="#our-clients" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Our
+                Clients
               </a>
 
-              <a href="#portfolio"
-                class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Portfolio
+              <a href="#portfolio" class="block mt-2 text-sm text-gray-900 hover:text-red-600 hover:underline">Portfolio
               </a>
 
               <!-- <a href="#"
@@ -680,8 +619,8 @@
       <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
       <div>
         <p class="text-center text-gray-900">© <span class="font-semibold"> K-labs Technology and solution </span>
-          2021
-          - All rights reserved
+          <span>2015 - 2021 All rights reserved </span>
+
         </p>
       </div>
     </div>
@@ -695,6 +634,7 @@
     const rooster = new Rooster('#rooster', 9998);
     rooster.setup();
   </script>
+  <script src="//unpkg.com/alpinejs" defer></script>
   <!-- script tags  End-->
 </body>
 

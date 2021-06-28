@@ -18,11 +18,17 @@
                 display: flex;
                 
         }
+
         .home-page .service{
                 display: flex;
                 justify-content: center;
         }
+
         .home-page img{
+                display: none;
+        }
+
+        .main-menu{
                 display: none;
         }
 }
@@ -38,6 +44,7 @@
                 display: flex;
                 justify-content: center;
         }
+        
         .home-page .home-content{
                 display: flex !important;
                 justify-content: center !important;
