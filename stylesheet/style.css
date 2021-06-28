@@ -44,15 +44,12 @@
                 display: flex;
                 justify-content: center;
         }
-        
+
         .home-page .home-content{
                 display: flex !important;
                 justify-content: center !important;
                 text-align: center !important;
         }
-        /* form{
-                
-        } */
 }
 
 html{
