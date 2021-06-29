@@ -8,16 +8,12 @@
         width: 200px !important;   
         }
 }
-@media (max-width: 639px){
-        form{
-                margin-left: 60px !important;
-        }
-}
-@media (max-width: 639px){
-        .ca-rd{
-                display: flex;
-                
-        }
+
+@media (max-width: 640px){
+
+        /* form{
+                margin: 10px 50px;
+        } */
 
         .home-page .service{
                 display: flex;
@@ -33,10 +29,17 @@
         }
 }
 @media only screen and (max-width: 639px){
-        .card{
+        .inner-card{
                 display: flex !important;
-                justify-content: center !important;
-                
+                flex-wrap: wrap !important;
+        }
+        .card{
+                justify-items: center !important;
+        }
+        .font-heading h1{
+                font-family: 'Baloo Tammudu 2', cursive;
+                text-align: center;
+                font-size: 32px;
         }
 }
 @media only screen and (max-width: 1023px){
@@ -55,6 +58,9 @@
 html{
         scroll-behavior: smooth;
 }
+body{
+        font-family:sans-serif ;
+}
 .navbar{
         position: fixed !important;
         top: 0;
@@ -64,24 +70,29 @@ html{
 .navbar a:active{
         color: red;
 }
-.menu{
-    font-family: 'Baloo Tammudu 2', cursive;
+/* .menu{
+    font-family: 'Baloo Tammudu 2' !important;
     font-size:18px;
-  }
+  } */
 /* .menu:hover {
     text-decoration: underline;
 } */
 .service-btn{
         outline: none;
 }
+
 .home-picture{
         width:600px;
         height:615px;
 }
-.About-us h1{
+
+/* Font Family  */
+.font-heading h1{
         font-family: 'Baloo Tammudu 2', cursive;
 }
-.card{
+
+
+.inner-card{
         width: 180px;
         height: 180px;
         border-radius: 50%;
@@ -90,33 +101,11 @@ html{
 .btn-Getintouch{
         outline: none !important;
 }
-.services h1{
-        font-family: 'Baloo Tammudu 2', cursive;;
-}
-.contact-us h1{
-        font-family: 'Baloo Tammudu 2', cursive;
-}
-.our-client h1{
-        font-family: 'Baloo Tammudu 2', cursive;
-}
-.portfolio-page h1{
-        font-family: 'Baloo Tammudu 2', cursive;
-}
-.our-partners h1{
-        font-family: 'Baloo Tammudu 2', cursive;
-}
-.Career h1{
-        font-family: 'Baloo Tammudu 2', cursive;
-        
-}
-.logo-footer{
-  width: 150px !important;
-  margin-left: -20px;
-}
 
-#rooster{
-        padding-left: 86px;
-}
+
+/* #rooster{
+        font-size: 1rem;
+} */
 .rooster-search{
         padding: 0.6rem 1rem;
         flex: 1;
@@ -162,11 +151,12 @@ html{
         flex-direction: row;
 }
 .rooster-job .chips .chip{
-        padding-left:6px;
         margin: 4px;
-        background-color: #d6d6d6;
+        padding: 2px 8px;
+        background-color: #F7F7F7;
         color: #666666;
         text-align: center;
+        border-radius: 12px;
 }
 .rooster-job .inline-value{
         padding-right: 0.6rem;
@@ -176,3 +166,9 @@ html{
 .rooster-job .inline-value:not(:last-child){
         border-right: 1px solid rgba(10,10,10,0.1);
 }
+
+.logo-footer{
+        width: 150px !important;
+        margin-left: -20px;
+      }
+      
