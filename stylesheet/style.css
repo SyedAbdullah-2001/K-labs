@@ -1,24 +1,4 @@
-@media (max-width: 650px){
-.logo {
-    width: 150px !important;
-}
-}
-@media (min-width: 650px){
-        .logo {
-        width: 200px !important;   
-        }
-}
-
 @media (max-width: 640px){
-
-        /* form{
-                margin: 10px 50px;
-        } */
-
-        .home-page .service{
-                display: flex;
-                justify-content: center;
-        }
 
         .home-page img{
                 display: none;
@@ -28,6 +8,7 @@
                 display: none;
         }
 }
+
 @media only screen and (max-width: 639px){
         .inner-card{
                 display: flex !important;
@@ -41,7 +22,17 @@
                 text-align: center;
                 font-size: 32px;
         }
+        .navbar{
+                padding: 9px !important;
+        }
 }
+
+@media only screen and (max-width: 767px){
+        .services-icons{
+                padding-left: calc(100vw/3 - 90px) !important;
+        }
+}
+
 @media only screen and (max-width: 1023px){
         .service-btn{
                 display: flex;
@@ -54,29 +45,30 @@
                 text-align: center !important;
         }
 }
-
+/* *{
+        margin: 0;
+        padding: 0;
+} */
 html{
         scroll-behavior: smooth;
+        --top-spacing: 80px;
+        scroll-padding-top: var(--top-spacing);
 }
 body{
         font-family:sans-serif ;
+        margin: var(--top-spacing) auto; 
 }
 .navbar{
-        position: fixed !important;
+        position: fixed;
         top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
         background-color: white !important;
-        width: 100% !important;
 }
 .navbar a:active{
         color: red;
 }
-/* .menu{
-    font-family: 'Baloo Tammudu 2' !important;
-    font-size:18px;
-  } */
-/* .menu:hover {
-    text-decoration: underline;
-} */
 .service-btn{
         outline: none;
 }
