@@ -56,7 +56,7 @@ html{
 }
 body{
         font-family:sans-serif ;
-        margin: var(--top-spacing) auto; 
+        margin-bottom: var(--top-spacing) auto;
 }
 .navbar{
         position: fixed;
@@ -64,6 +64,7 @@ body{
         left: 0;
         width: 100%;
         padding: 5px;
+        font-family: 'Baloo Tammudu 2';
         background-color: white !important;
 }
 .navbar a:active{
@@ -80,7 +81,7 @@ body{
 
 /* Font Family  */
 .font-heading h1{
-        font-family: 'Baloo Tammudu 2', cursive;
+        font-family: 'Baloo Tammudu 2';
 }
 
 
@@ -114,10 +115,12 @@ body{
         text-decoration: none;
 }
 .rooster-job h3{
+        color: #f32d2d;
         padding: 0;
         margin: 0 0 0.4rem 0;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         font-weight: 600;
+        font-family: sans-serif;
         text-decoration: none;
 }
 .rooster-job h4{
@@ -134,18 +137,20 @@ body{
         color: red;
 }
 .rooster-department-header h3{
+        display: none;
         margin-bottom: 0px;
         font-weight: 700;
 }
 .rooster-job .data-row{
         padding: 0rem 0rem 0.4rem 0rem;
-        font-size: 0.924rem;
+        font-size: 1rem;
         flex-direction: row;
 }
 .rooster-job .chips .chip{
+        font-size: .950rem;
         margin: 4px;
         padding: 2px 8px;
-        background-color: #F7F7F7;
+        background-color: #ededed;
         color: #666666;
         text-align: center;
         border-radius: 12px;
