@@ -8,8 +8,19 @@
                 display: none;
         }
 }
+/* @media only screen and (max-width: 640px){
+        body{
+                max-width: 100%;
+                overflow-x: hidden;
+                width: 100%;
+                -webkit-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                   box-sizing: border-box;
 
+        }
+} */
 @media only screen and (max-width: 639px){
+       
         .inner-card{
                 display: flex !important;
                 flex-wrap: wrap !important;
@@ -57,6 +68,8 @@ html{
 body{
         font-family:sans-serif ;
         margin-bottom: var(--top-spacing) auto;
+        /* overflow-x: hidden !important; */
+      
 }
 .navbar{
         position: fixed;
@@ -66,13 +79,15 @@ body{
         padding: 5px;
         font-family: 'Baloo Tammudu 2';
         background-color: white !important;
+  
 }
+
 .navbar a:active{
         color: red;
 }
-.service-btn{
+/* .service-btn{
         outline: none;
-}
+} */
 
 .home-picture{
         width:600px;
@@ -83,7 +98,9 @@ body{
 .font-heading h1{
         font-family: 'Baloo Tammudu 2';
 }
-
+/* .btn{
+        font-family: 'Baloo Tammudu 2' !important;
+} */
 
 .inner-card{
         width: 180px;
@@ -91,8 +108,9 @@ body{
         border-radius: 50%;
         justify-content: space-evenly;
 }
-.btn-Getintouch{
+.btn-btn{
         outline: none !important;
+        font-family: 'Baloo Tammudu 2' !important;
 }
 
 

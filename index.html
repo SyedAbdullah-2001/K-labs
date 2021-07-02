@@ -16,7 +16,6 @@
 </head>
 
 <body>
-  <!-- <div style="position: relative;"> -->
 
   <!-- Header Start from here -->
   <nav class="bg-white dark:bg-gray-800 navbar shadow-lg z-10">
@@ -96,14 +95,22 @@
               Our partners </a>
             <hr class="h-px bg-gray-200 border-none dark:bg-gray-900">
 
-            <div>
-              <a @click="isOpen = !isOpen" href="#Get-in-touch" class="inline-block pt-5 px-2">
-                <button
-                  class="py-2 px-4 w-full bg-red-600 hover:bg-red-700 text-white font-semibold hover:text-white border border-red-600 outline-none focus:outline-none hover:border-transparent rounded-full">
-                  Get in touch
-                </button>
-              </a>
+            <!-- button  -->
+            <a @click="isOpen = !isOpen" href="#Get-in-touch"
+              class="btn-btn inline-block sm:hidden mt-5 md:text-2xl sm:text-xl px-3 shadow-2xl pt-2 text-base font-semibold text-center bg-red-600  hover:bg-red-700 focus:ring-red-700 focus-within:text-white text-white rounded-full">
+              Get in touch
+            </a>
+
+            <!-- Contact icons -->
+            <div class="grid grid-cols-1 sm:grid-cols-1">
+              <div class="sm:w-auto mt-3 sm:mt-0 space-x-3 sm:space-x-5">
+                <a href="tel:+973 36995799"><i class="fa fa-phone text-red-600 text-2xl" aria-hidden="true"></i></a>
+
+                <a href="mailto:khaled@klabs.co"><i class="fa fa-envelope  text-red-600 text-2xl"
+                    aria-hidden="true"></i></a>
+              </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -121,18 +128,29 @@
             <p class="text-lg text-gray-700 lg:text-xl">Embrace digitalisation for new range of business
               opportunities.
             </p>
+
             <p class="text-lg text-gray-700 lg:text-xl">Embracing digitalisation to tap into new markets.</p>
+
             <h2 class="text-xl lg:text-2xl font-semibold text-gray-900 mt-3 mb-5">
               Get innovative digital solution and develop your business now</h2>
+
             <q class="text-lg lg:text-2xl text-gray-900">We deliver high quality products based on the latest
               technologies and
               standards in order to offer our customers added value and help them grow.</q>
-            <div class="service-btn flex mt-6 lg:space-y-0 lg:flex-row">
+
+            <!-- <div class="flex mt-6 lg:space-y-0 lg:flex-row">
               <a href="#services"
-                class="block w-2/6 md:text-2xl sm:text-xl px-3 shadow-2xl py-2 text-base font-semibold text-center bg-red-600  hover:bg-red-700 focus:ring-red-700 focus-within:text-white text-white rounded-full">
+                class="btn-btn block w-2/6 md:text-2xl sm:text-xl px-3 shadow-2xl text-base font-semibold text-center bg-red-600  hover:bg-red-700 focus:ring-red-700 focus-within:text-white text-white rounded-full">
                 Services
               </a>
+            </div> -->
+            <div class="flex mt-6 lg:space-y-0 lg:flex-row justify-center lg:justify-between">
+              <a href="#services"
+                class="btn-btn w-1/3 block md:text-2xl sm:text-xl px-3 shadow-2xl pt-2 text-base font-semibold text-center bg-red-600  hover:bg-red-700 focus:ring-red-700 focus-within:text-white text-white rounded-full">
+                services
+              </a>
             </div>
+
           </div>
         </div>
         <div>
@@ -149,58 +167,65 @@
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 bg-red-600">
       <div class="font-heading pt-0 xs:pt-6 lg:mt-auto">
         <div
-          class="lg:flex text-center py-7 justify-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold text-white"
-          data-aos="fade-up" data-aos-duration="1000">
+          class="lg:flex text-center py-7 justify-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold text-white">
           <h1> About us </h1>
         </div>
         <div class="grid lg:grid-cols-2 sm:grid-cols-1">
-          <div class="justify-center" data-aos="fade-right" data-aos-duration="1500">
+          <div class="justify-center">
             <div
               class="items-center text-center xl:text-left lg:text-left md:text-left sm:text-center justify-center w-full xl:text-xl lg:text-xl md:text-xl text-base text-white font-extralight">
-              <h3 class="flex">
+              <h3 class="flex" data-aos="fade-up" data-aos-duration="1000">
                 Technology is at the center of business activities and factors related to technology reflect the
                 reliability
                 and professionalism of a business. At K-Lab we recognize this importance so that we offer you the best
                 and
                 suitable technological solutions based on your needs and requirements.
               </h3>
-              <h3 class="mt-5 flex">
+
+              <h3 class="mt-5 flex" data-aos="fade-up" data-aos-duration="1000">
                 More than 10 expertise in the IT industry and a customer-centric approach are our salient strengths
                 allowing
                 us to better serve your business and help you grow.
               </h3>
-              <h3 class="mt-5 flex">
+
+              <h3 class="mt-5 flex" data-aos="fade-up" data-aos-duration="1000">
                 It is our goal to provide reliable, flexible, and secure web and app solutions that support business
                 activities and serve global customers, providing by that a key growth driver.
               </h3>
+
             </div>
             <div
               class="card grid lg:grid-cols-3 sm:grid-cols-3 lg:gap-10 lg:-ml-7 lg:-m-5 md:gap-8 gap-5 md:pl-3 md-pt-16 pt-8 sm:pb-10 text-base"
               data-aos="fade-up" data-aos-duration="1000">
-              <div
-                class="inner-card text-white text-center hover:shadow-2xl shadow-xl font-semibold cursor-default hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
+
+              <div class="inner-card text-white text-center hover:shadow-2xl shadow-xl font-semibold cursor-default hover:text-red-600
+               hover:bg-white transform transition duration-700 hover:scale-110">
                 <div class="m-8 text-center justify-center">
                   <span class="sm:font-semibold text-lg sm:text-xl ">Team members </span><span
                     class="flex justify-center text-5xl">
                     10+ </span>
                 </div>
               </div>
-              <div
-                class="inner-card text-white text-center text-base sm:text-lg hover:shadow-2xl shadow-xl font-semibold cursor-default hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
+
+              <div class="inner-card text-white text-center text-base sm:text-lg hover:shadow-2xl shadow-xl font-semibold cursor-default
+                 hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
                 <div class="m-5 p-2 sm:p-0">
                   <span>Founded in Bahrain in 2015 and expanded worldwide in 2018</span>
                 </div>
               </div>
-              <div
-                class="inner-card text-white text-center text-base sm:text-lg hover:shadow-2xl shadow-xl font-semibold cursor-default hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
+
+              <div class="inner-card text-white text-center text-base sm:text-lg hover:shadow-2xl shadow-xl font-semibold cursor-default
+               hover:text-red-600 hover:bg-white transform transition duration-700 hover:scale-110">
                 <div class="m-5 p-2 sm:p-0">
                   <span>We offer services to government entities and organizations</span>
                 </div>
               </div>
+
             </div>
           </div>
+
           <form class="md:grid-cols-1 sm:grid-cols-1 sm:pt-0 sm:pb-7 pt-20 pb-10 lg:ml-0" id="Get-in-touch"
-            data-aos="fade-left"  data-aos-duration="1000">
+            data-aos="fade-up" data-aos-duration="1000">
             <div class="md:justify-end sm:ml-7">
               <div class="xl:ml-10 lg:ml-10 md:ml-0 sm:ml-0 bg-white shadow-2xl rounded-2xl p-10">
                 <h2 class="text-gray-900 font-semibold justify-center text-center text-2xl">
@@ -213,12 +238,14 @@
                       class="p-1 px-2 appearance-none outline-none w-full text-gray-800">
                   </div>
                 </div>
+
                 <div class="w-full">
                   <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
                       class="text-red-400 mr-1">*</span> Email </div>
                   <div class="my-2 bg-white p-1 flex border border-gray-200 rounded-2xl"> <input placeholder="Email"
                       class="p-1 px-2 appearance-none outline-none w-full text-gray-800"> </div>
                 </div>
+
                 <div class="w-full">
                   <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
                       class="text-red-400 mr-1">*</span> Mobile Number</div>
@@ -226,6 +253,7 @@
                       placeholder="Mobile Number" class="p-1 px-2 appearance-none outline-none w-full text-white-800">
                   </div>
                 </div>
+
                 <div class="w-full">
                   <div class="font-bold h-6 mt-3 text-gray-900 text-xs leading-8 uppercase"><span
                       class="text-red-400 mr-1">*</span>Message</div>
@@ -233,10 +261,12 @@
                       class="p-1 px-2 appearance-none outline-none w-full text-white-800 focus:outline-none">
                   </div>
                 </div>
+
                 <div class="mt-6">
                   <div class="text-center font-medium py-2 px-4 shadow-xl rounded-3xl bg-red-600 hover:bg-red-700 text-white
                      cursor-pointer text-xl">Submit</div>
                 </div>
+
               </div>
             </div>
           </form>
@@ -252,11 +282,11 @@
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 pb-10">
       <div class="font-heading pt-0 xs:pt-6  bg-gray-100">
         <div class="lg:text-center">
-          <h1 class="py-7 lg:text-6xl md:text-5xl sm:text-4xl sm:text-center font-semibold text-gray-900"
-            data-aos="fade-up" data-aos-duration="1500">
+          <h1 class="py-7 lg:text-6xl md:text-5xl sm:text-4xl sm:text-center font-semibold text-gray-900">
             Services
           </h1>
-          <div class="text-center xl:text-xl lg:text-2xl md:text-xl sm:text-lg text-gray-900" data-aos="fade-left" data-aos-duration="1000">
+
+          <div class="text-center xl:text-xl lg:text-2xl md:text-xl sm:text-lg text-gray-900">
             <h2 class="py-1">
               <b class="uppercase">
                 +10 Years
@@ -264,6 +294,7 @@
               of experience in the development of web & application solutions with unparalleled quality of customer
               service.
             </h2>
+
             <h2 class="py-1">
               <b class="uppercase">
                 +20 Projects
@@ -271,46 +302,45 @@
               executed to empower different businesses with the solutions and tools they need to succeed in their
               journey.
             </h2>
+
             <h2 class="py-1">
               We offer various services including design, development, optimization, and management services to help
               your
               business grow.
             </h2>
+
           </div>
         </div>
         <div class="services-icons mt-10 mx-10">
-          <div class=" md:space-y-0 md:grid md:grid-cols-3 sm:grid-cols-1" data-aos="fade-up" data-aos-duration="1000">
-            <!-- <div class="py-5"> -->
-            <div class=" py-5 flex items-center xl:justify-center lg:justify-center md:justify-center">
+          <div class=" md:space-y-0 md:grid md:grid-cols-3 sm:grid-cols-1">
+            <div class=" py-5 flex items-center xl:justify-center lg:justify-center md:justify-center"
+              data-aos="fade-up" data-aos-duration="1000">
               <img src="img/icon-consultation.png" class="" alt="Consultation">
               <p class=" mt-3 text-lg leading-6 font-medium text-gray-900">
                 Consultation
               </p>
             </div>
-            <!-- </div> -->
-            <!-- <div class="py-5"> -->
-            <div class=" py-5 flex items-center xl:justify-center lg:justify-center md:justify-center">
+
+            <div class=" py-5 flex items-center xl:justify-center lg:justify-center md:justify-center"
+              data-aos="fade-up" data-aos-duration="1000">
               <img src="img/icon-development.png" class="" alt="Web Development">
               <p class="mt-3 text-lg leading-6 font-medium text-gray-900">
                 Web Development
               </p>
             </div>
-            <!-- </div> -->
-            <!-- <div
-              class=" flex md:grid md:grid-cols-2 sm:grid-cols-1 sm:py-0 md:gap-x-8 md:gap-y-10 sm:flex-col items-center justify-center"> -->
-            <!-- <div class="py-5"> -->
-            <div class="py-5 flex items-center xl:justify-center lg:justify-center md:justify-center">
+
+            <div class="py-5 flex items-center xl:justify-center lg:justify-center md:justify-center" data-aos="fade-up"
+              data-aos-duration="1000">
               <img src="img/icon-ios-development.png" class="" alt="Mobile application">
               <p class="mt-3 text-lg leading-6 font-medium text-gray-900">
                 Mobile Applications
               </p>
             </div>
-            <!-- </div> -->
+
           </div>
         </div>
         <div class="mt-10 sm:pb-10 pb-7">
-          <h2 class="text-base font-semibold text-center lg:text-3xl md:text-2xl sm:text-xl text-gray-900 py-12"
-            data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="text-base font-semibold text-center lg:text-3xl md:text-2xl sm:text-xl text-gray-900 py-12">
             Our approach Is based on 4 Stages
           </h2>
           <!-- Extra Large screen -->
@@ -321,27 +351,21 @@
                 <p class="mr-3">
                   Hear the customer’s needs
                 </p>
-                <!-- <img src="img/icon-right-arrow.png" alt=""> -->
                 <span><i class="fa fa-long-arrow-right text-red-600 text-xl mr-3" aria-hidden="true"></i></span>
-                <!-- <span><i class="fa fa-long-arrow-down text-red-600 text-xl mb-3" aria-hidden="true"></i></span> -->
               </div>
 
               <div class="flex items-center mr-1">
                 <p class="mr-3">
                   Evaluate and propose the best solution
                 </p>
-                <!-- <img src="img/icon-right-arrow.png" alt=""> -->
                 <span><i class="fa fa-long-arrow-right text-red-600 text-xl mr-3" aria-hidden="true"></i></span>
-                <!-- <span><i class="fa fa-long-arrow-down text-red-600 text-xl mb-3" aria-hidden="true"></i> </span> -->
               </div>
 
               <div class="flex items-center mr-1">
                 <p class="mr-3">
                   Involve the customer while developing the solution
                 </p>
-                <!-- <img src="img/icon-right-arrow.png" alt=""> -->
                 <span><i class="fa fa-long-arrow-right text-red-600 text-xl mr-3" aria-hidden="true"></i></span>
-                <!-- <span><i class="fa fa-long-arrow-down text-red-600 text-xl mb-3" aria-hidden="true"></i> </span> -->
               </div>
 
               <div class="flex items-center">
@@ -354,7 +378,8 @@
           <!-- Extra Large screen -->
 
           <!-- mobile screen -->
-          <div class="py-4 sm:px-6 bg-gray-50 rounded-2xl shadow-xl xl:hidden" data-aos="fade-down" data-aos-duration="1000">
+          <div class="py-4 sm:px-6 bg-gray-50 rounded-2xl shadow-xl xl:hidden" data-aos="fade-down"
+            data-aos-duration="1000">
             <div class="font-semibold">
               <div class="mb-1 text-center">
                 <p class="mb-3">
@@ -397,15 +422,15 @@
     <div class="font-heading pt-0">
       <div class="max-w-7xl mx-auto sm:px-6 pb-10">
         <div class="lg:text-center">
-          <h1 class="py-7 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900"
-            data-aos="fade-up" data-aos-duration="1500">
+          <h1 class="py-7 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900">
             Contact us
           </h1>
         </div>
         <div class="flex">
           <div
             class="bg-red-600 p-8 sm:p-12 text-center sm:text-left text-white rounded-2xl shadow-xl justify-center items-center"
-            data-aos="fade-up-right" data-aos-duration="3000">
+            data-aos="fade-up" data-aos-duration="3000">
+
             <h2 class="text-sm sm:text-base md:text-2xl">
               Need IT services of excellence?<br>
               Do you have any questions? Requests? Ideas? Or maybe you simply want to chat
@@ -415,24 +440,26 @@
               your
               request.
             </h2>
+
             <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 text-lg pt-5">
               <div class="py-2 sm:py-4 whitespace-no-wrap text-sm leading-5 text-black-500">
                 <i class="fa fa-phone text-base md:text-2xl text-white" aria-hidden="true"></i>
-                <span class="text-base md:text-xl">(973) 36995799</span>
+                <span class="text-base md:text-xl"><a href="tel:+97336995799">+97336995799</a></span>
               </div>
+
               <div class="py-2 sm:py-4 whitespace-no-wrap text-sm leading-5 text-black-500">
                 <i class="fa fa-envelope text-base md:text-2xl text-white" aria-hidden="true"></i>
                 <span class="text-base md:text-xl"><a href="mailto:khaled@klabs.co">khaled@klabs.co</a></span>
               </div>
+
               <div class="py-2 sm:py-4 whitespace-no-wrap text-sm leading-5 text-black-500">
                 <i class="fa fa-clock-o text-xl  md:text-2xl text-white" aria-hidden="true"></i>
                 <span class="text-base md:text-2xl"> Opening Times: 24/7 </span>
               </div>
+
             </div>
           </div>
-          <!-- <div class="flex flex-wrap w-1/2 md:w-2/6 sm:w-1/4">
-            <img src="img/At the office.png" alt="">
-          </div> -->
+
         </div>
       </div>
     </div>
@@ -441,17 +468,15 @@
 
 
   <!-- Our Clients start -->
-
   <div class="w-full bg-gray-100" id="our-clients">
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 bg-gray-100 pb-10">
       <div class="font-heading pt-0">
-        <h1 class="py-7 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900" data-aos="fade-up"
-          data-aos-duration="1500">
+        <h1 class="py-7 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900">
           Our Clients
         </h1>
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 text-xl pb-10">
-        <div class="text-center sm:text-left" data-aos="fade-right" data-aos-duration="3000">
+        <div class="text-center sm:text-left">
           <p>
             Our clients are from different industries and backgrounds but they all share the need to have a
             technological
@@ -459,7 +484,8 @@
             operations.
           </p>
         </div>
-        <Div class="pt-10 xl:pt-0 lg:pt-0 md:pt-10 sm:pt-10 sm:ml-0" data-aos="fade-up" data-aos-duration="1000">
+
+        <Div class="pt-10 xl:pt-0 lg:pt-0 md:pt-10 sm:pt-10 sm:ml-0">
           <div class="flex border-gray-200 lg:ml-14 sm:ml-0">
             <img alt="team"
               class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -469,6 +495,7 @@
               <p class="text-gray-500 text-base sm:text-xl">Director</p>
             </div>
           </div>
+
           <div class="flex border-gray-200 lg:ml-14 sm:ml-0 mt-8">
             <img alt="team"
               class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -478,6 +505,7 @@
               <p class="text-gray-500 text-base sm:text-xl"> Senior Full-stack Developer</p>
             </div>
           </div>
+
           <div class="flex border-gray-200 lg:ml-14 sm:ml-0 mt-8">
             <img alt="team"
               class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -488,7 +516,8 @@
             </div>
           </div>
         </Div>
-        <Div class="pt-10 xl:pt-0 lg:pt-0 md:pt-10 sm:pt-10" data-aos="fade-left" data-aos-duration="1000">
+
+        <Div class="pt-10 xl:pt-0 lg:pt-0 md:pt-10 sm:pt-10">
           <div class="flex border-gray-200 lg:ml-14 sm:ml-0">
             <img alt="team"
               class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -498,6 +527,7 @@
               <p class="text-gray-500 text-base sm:text-xl">Senior Backend Developer</p>
             </div>
           </div>
+
           <div class="flex border-gray-200 lg:ml-14 sm:ml-0 mt-8">
             <img alt="team"
               class="w-16 h-16 sm:w-20 sm:h-20 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
@@ -507,15 +537,8 @@
               <p class="text-gray-500 text-base sm:text-xl">Traine</p>
             </div>
           </div>
-          <!-- <div class="flex border-gray-200 lg:ml-14 sm:ml-0 mt-8">
-            <img alt="team" class="w-16 h-16 bg-gray-900 object-cover object-center flex-shrink-0 rounded-full mr-4"
-              src="img/Favicon.png">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">K-labs</h2>
-              <p class="text-gray-500">Technology and solution</p>
-            </div>
-          </div> -->
         </Div>
+
       </div>
     </div>
   </div>
@@ -526,48 +549,49 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-10" id="portfolio">
     <div class="pt-0 sm:pt-6 bg-white">
       <div class="font-heading lg:text-center">
-        <h1 class="py-7 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900"
-          data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="py-7 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold  text-gray-900">
           Portfolio
           <h1>
       </div>
     </div>
-    <div class="text-lg sm:text-2xl text-center" data-aos="fade-left" data-aos-duration="1000">
+
+    <div class="text-lg sm:text-2xl text-center">
       Our achievements and delivered projects are our ambassadors to the market.
     </div>
     <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-3 py-12 pb-10">
+
       <div class="portfolio">
         <img class="rounded-3xl" src="img/Bahrain Basketball Association.jpg" alt="">
         <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Bahrain Basketball Association
         </p>
-        <!-- <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
       </div>
+
       <div class="portfolio">
         <img class="rounded-3xl" src="img/AlJunobya.jpg" alt="">
         <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Aljunobya</p>
-        <!-- <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
       </div>
+
       <div class="portfolio">
         <img class="rounded-3xl" src="img/Alia Academy.jpg" alt="">
         <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Alia Academy</p>
-        <!-- <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
       </div>
+
       <div class="portfolio">
         <img class="rounded-3xl" src="img/Bahj.jpg" alt="">
         <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Bahj </p>
-        <!-- <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
       </div>
+
       <div class="portfolio">
         <img class="rounded-3xl" src="img/Made in gulf.jpg" alt="">
         <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">Made In Gulf</p>
-        <!-- <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
       </div>
+
       <div class="portfolio">
         <img class="rounded-3xl" src="img/National Institution for human rights.jpg" alt="">
         <p class="block mt-1 text-lg leading-tight font-medium text-black text-center">National Institution for Human
           Rights</p>
-        <!-- <p class="mt-2 text-gray-500 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> -->
       </div>
+
     </div>
   </div>
   <!-- PortFolio Section End -->
@@ -579,16 +603,18 @@
       <div class="pt-0 sm:pt-2">
         <div class="font-heading lg:text-center">
           <h1 class="text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold text-gray-900 py-7"
-            data-aos="fade-up" data-aos-duration="1500" data-aos-duration="1500">
+            data-aos-duration="1500">
             Our Partners
           </h1>
         </div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 pb-10">
-        <div class="font-semibold mx-auto w-1/4 sm:w-4/12 pb-14 sm:pb-0" data-aos="fade-right" data-aos-duration="1500">
+
+        <div class="font-semibold mx-auto w-1/4 sm:w-4/12 pb-14 sm:pb-0" data-aos="fade-right" data-aos-duration="1000">
           <img src="img/our-partner-raed.png" alt="">
         </div>
-        <div class="font-semibold mx-auto w-1/4 sm:w-4/12" data-aos="fade-left" data-aos-duration="1500">
+
+        <div class="font-semibold mx-auto w-1/4 sm:w-4/12" data-aos="fade-left" data-aos-duration="1000">
           <img src="img/our-partner-telp.png" alt="">
         </div>
       </div>
@@ -602,32 +628,35 @@
     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 pb-10">
       <div class="font-heading pt-0">
         <div class="lg:text-center">
-          <h1 class="sm:py-10 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold text-gray-900"
-            data-aos="fade-up" data-aos-duration="1500">
+          <h1 class="sm:py-10 text-center lg:text-6xl md:text-5xl sm:text-4xl font-semibold text-gray-900">
             Careers
           </h1>
         </div>
       </div>
-      <div class="mx-auto text-gray-900 text-lg sm:text-2xl text-center" data-aos="fade-up" data-aos-duration="2000" >
-        <h2 class="font-semibold "> As a growing company, we are constantly looking for talented people to join the
+
+      <div class="mx-auto text-gray-900 text-lg sm:text-2xl text-center">
+        <h2 class="sm:font-semibold "> As a growing company, we are constantly looking for talented people to join the
           team.
           If you are interested in working with us, please contact us at <a class="text-red-600"
             href="mailto:careers@klabs.co" class="">
             careers@klabs.co</a>
         </h2>
-        <div class="inline sm:hidden pb-10"data-aos="fade-up" data-aos-duration="2500">
+
+        <div class="inline sm:hidden pb-10">
           <h2>
             OR
           </h2>
           <h2>
             Click on the button to apply.
           </h2>
+
           <a href="https://rooster.jobs/9998" target="_blank">
             <button
               class="mt-5 mb-10 py-2 px-4 bg-transparent hover:bg-red-600 text-red-600 font-semibold hover:text-white text-base border border-red-600 outline-none focus:outline-none hover:border-transparent rounded-lg">
               Apply via Rooster
             </button>
           </a>
+
         </div>
       </div>
       <div class="pb-10 hidden sm:inline" id="rooster"></div>
@@ -644,7 +673,7 @@
         <div class="lg:flex">
           <div class="w-full sm:-mx-6 lg:w-2/5">
             <div class="sm:px-6 px-0">
-              <div class="flex sm:inline-block justify-center" data-aos="fade-right" data-aos-duration="2500">
+              <div class="flex sm:inline-block justify-center">
                 <a href="index.html" class="sm:text-xl font-bold text-gray-900 "><img src="img/Logo.png"
                     title="K-Labs Technology Solutions" class="sm:h-12 h-10 w-auto ml-4 sm:-ml-5" alt="">
                   <p class="max-w-md mt-2 text-gray-900 cursor-pointer">
@@ -653,11 +682,11 @@
                 </a>
               </div>
 
-              <p class="sm:max-w-sm mt-2 text-gray-500 text-center sm:text-left"data-aos="fade-right" data-aos-duration="2500">
+              <p class="sm:max-w-sm mt-2 text-gray-500 text-center sm:text-left">
                 Get innovative digital solution and develop your business now.
               </p>
 
-              <div class="flex flex-row justify-center sm:justify-start mt-4 -mx-2" data-aos="fade-up" data-aos-duration="1500">
+              <div class="flex flex-row justify-center sm:justify-start mt-4 -mx-2">
                 <a href="https://www.linkedin.com/company/k-labs-tech/" target="_blank"
                   class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 "
                   aria-label="linkedin" title="Linkedin">
@@ -678,7 +707,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-6 lg:mt-0 lg:flex-1"  data-aos="fade-up" data-aos-duration="1500">
+          <div class="mt-6 lg:mt-0 lg:flex-1">
             <div class="grid grid-cols-1 text-center xl:grid:cols-3 lg:grid-cols-3 gap-4 sm:grid-cols-2 md:grid-cols-3">
               <div class="flex flex-col items-center">
                 <!-- <h3 class="uppercase text-red-700 cursor-default">Who are we? </h3> -->
@@ -720,7 +749,7 @@
               <div class="flex flex-col items-center">
                 <h3 class="uppercase text-red-700 cursor-default mt-2">Contact</h3>
                 <span class="block mt-2 text-sm text-gray-900 dark:text-gray-400 hover:underline"><a
-                    href="tel:00973 36995799">+973 36995799</a></span>
+                    href="tel:+973 36995799">+973 36995799</a></span>
                 <span class="block mt-2 text-sm text-gray-900 dark:text-gray-400 hover:underline"><a
                     href="mailto:khaled@klabs.co">khaled@klabs.co</a></span>
                 <p class="block mt-2 text-sm text-gray-900 dark:text-gray-400 hover:underline cursor-default">Opening
@@ -731,20 +760,12 @@
         </div>
       </div>
       <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
-      <p class="text-center text-gray-900">© <span class="font-semibold" > K-labs Technology and solution </span>
-        <span>2015 - 2021 All rights reserved </span>
-      </p>
-    </div>
-    </div>
-  </div>
-  <!-- </div> -->
-  <!-- <div class="max-w-7xl mx-auto -mb-14 px-4 sm:px-6 bg-white">
-    <div class="px-6 mx-auto">
       <p class="text-center text-gray-900">© <span class="font-semibold"> K-labs Technology and solution </span>
         <span>2015 - 2021 All rights reserved </span>
       </p>
     </div>
-  </div> -->
+  </div>
+  </div>
   <!-- Footer End  -->
 
 
@@ -754,7 +775,9 @@
     const rooster = new Rooster('#rooster', 9998);
     rooster.setup();
   </script>
+
   <script src="//unpkg.com/alpinejs" defer></script>
+
   <script src="stylesheet/aos-master/dist/aos.js"></script>
   <script>
     AOS.init();
